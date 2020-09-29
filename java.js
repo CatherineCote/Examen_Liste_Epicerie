@@ -4,7 +4,7 @@
       repeat: -1,
     yoyo: true 
     })
-    gsap.registerPlugin(ScrollTrigger);
+    
 gsap.timeline({
     
     scrollTrigger: {
@@ -19,6 +19,17 @@ gsap.timeline({
     x: '100%',
   })
 
+  gsap.to('.sectionFormulaire', { 
+    backgroundColor:' #fdf1ec',
+    scrollTrigger: {
+        scrub: 1,
+        markers: true,
+        start: 'top 100%',
+        end: 'bottom 50%',
+        trigger: '.sectionCrayon',
+      }
+  })
+ 
   gsap.timeline({
     
     scrollTrigger: {
